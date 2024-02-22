@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.Canvas?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lab.GameManager">
+   <children>
+      <Canvas fx:id="gameCanvas" height="400" layoutX="0" layoutY="0" width="800" />
+      <AnchorPane layoutY="-1.0" prefHeight="400.0" prefWidth="800.0">
+         <children>
+            <TextField fx:id="playerName" alignment="CENTER" layoutX="325.0" layoutY="320.0" promptText="Player Name" />
+            <Button fx:id="startButton" layoutX="380.0" layoutY="366.0" mnemonicParsing="false" onAction="#handleStartButtonAction" text="Start" />
+            <Button fx:id="saveScore" layoutX="361.0" layoutY="272.0" mnemonicParsing="false" text="Save Scores" />
+            <TableView fx:id="tableView" disable="true" prefHeight="400.0" prefWidth="800.0" visible="false">
+               <columns>
+                  <TableColumn fx:id="columnPlayerOne" prefWidth="344.0" text="Player One Name" />
+                  <TableColumn fx:id="columnScoreOne" prefWidth="456.00006103515625" text="Player One Score" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
